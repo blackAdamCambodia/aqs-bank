@@ -21,6 +21,8 @@ withdrawBtn.addEventListener("click", function(){
         upgradeSpanText('withdrawBalance',withdrawAmount)
         upgradeSpanText('totalBalance',-1*withdrawAmount)     
         document.getElementById('withdrawAmount').value = '';
+
+       
     })
 
     function getInputNumber(id){
