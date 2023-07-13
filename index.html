@@ -14,8 +14,8 @@
             <div class="submit-area bg-white text-dark p-5 w-75 mx-auto rounded-2 ">
                 <h4>Login</h4>
                 <form action="#">
-                    <input type="text" class="form-control mb-4 " placeholder="Enter your Email" required >
-                    <input type="password" name="" id="" class="form-control mb-4 "  placeholder="Enter your password" required>
+                    <input type="email" id="email" name="email" class="form-control mb-4 " placeholder="Enter your Email"  >
+                    <input type="password" name="password" id="password" class="form-control mb-4 "  placeholder="Enter your password" >
                     <button id="login" class="btn btn-success">Enter</button>
                 </form>
             </div>
@@ -25,19 +25,19 @@
                 <div class="col-md-4">
                     <div class="deposit status">
                         <h5>Deposit</h5>
-                        <h2>$00</h2>
+                        <h2>$ <span id="currentDeposit">00</span></h2>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="withdraw status">
                         <h5>Withdraw</h5>
-                        <h2>$00</h2>
+                        <h2>$ <span id="withdrawBalance">00</span></h2>
                     </div>                
                 </div>
                 <div class="col-md-4">
                     <div class="balance status">
                         <h5>Balance</h5>
-                        <h2>$00</h2>
+                        <h2>$ <span id="totalBalance">100</span></h2>
                     </div>
                 </div>
             </div>
@@ -45,14 +45,14 @@
                 <div class="col-md-6">
                     <div class="submit-area bg-white text-dark p-5  rounded-2">
                         <h4>Deposit</h4>
-                        <input type="text" class="form-control" placeholder="$ Amount you want to Deposit"><br>
-                        <button class="btn btn-success">Deposit</button></div>
+                        <input id="depositAmount" type="number" class="form-control" placeholder="$ Amount you want to Deposit"><br>
+                        <button id="addDeposit"  class="btn btn-success">Deposit</button></div>
                 </div>
                 <div class="col-md-6">
                     <div class="submit-area bg-white text-dark p-5  rounded-2 ">
                         <h4>Withdraw</h4>
-                        <input type="text" class="form-control" placeholder="$ Amount you want to Deposit"><br>
-                        <button class="btn btn-success">Withdraw</button></div>
+                        <input id="withdrawAmount" type="number" class="form-control" placeholder="$ Amount you want to Deposit"><br>
+                        <button id="addWithdrawAmount" class="btn btn-success">Withdraw</button></div>
                 </div>
             </div>
         </div>
